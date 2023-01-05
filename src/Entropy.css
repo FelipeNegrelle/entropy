@@ -1,0 +1,118 @@
+@keyframes changer {
+    to{content: 3}
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+.header{
+    /* position: fixed; */
+    background: #0A934B;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 5rem;
+    width: 100vw;
+    height: max-content;
+    padding: 1.5rem 0;
+}
+
+.header__title {
+    font-size: 5rem;
+    font-family: var(--ubuntu);
+    font-weight: 600;
+    color: var(--branco);
+    text-align: center;
+    padding: 1rem;
+}
+
+.main {
+    background: lightgray;
+    display: flex;
+    align-items: center;
+    margin: 5rem auto;
+    height: max-content;
+    width: max-content;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+}
+
+.checkbox {
+    display: flex;
+    flex: row;
+    justify-content: space-around;
+    align-self: flex-end;
+    margin: .3rem 0;
+    font-size: 1.5rem;
+    font-family: var(--ubuntu);
+    gap: .4rem;
+}
+.main__input {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem 3rem;
+    text-align: center;
+    width: 30vw;
+    height: 5vh;
+}
+
+.entropy__value {
+    font-size: 3rem;
+    margin: 2rem 0;
+    font-family: var(--ubuntu);
+    
+}
+
+.bottom-text {
+    font-size: 2rem;
+    font-family: var(--ubuntu);
+    font-weight: 600;
+}
+
+.footer, .footer__title {
+    background: #0A934B;
+    display: flex;
+    align-self: flex-end;
+    margin: 0 auto;
+    font-size: 2rem;
+    width: 100%;
+    height: max-content;
+    padding: 1rem 0;
+    justify-content: center;
+    font-size: 3rem;
+    color: var(--branco);
+    font-family: var(--ubuntu);
+    font-weight: 400;
+    gap: .5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .header, .header__title {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .header__title {
+        line-height: 5rem;
+    }
+
+    .main {
+        width: 100vw;
+    }
+    .checkbox {
+        align-self: center;
+    }
+    .main__input {
+        width: 100%;
+    }
+}

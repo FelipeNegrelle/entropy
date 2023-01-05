@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Ubuntu:wght@300;400;700&display=swap');
+
+:root {
+  --questrial: 'Questrial', sans-serif;
+  --ubuntu: 'Ubuntu', sans-serif;
+  line-height: 24px;
+
+  --branco: rgba(255, 255, 255, 0.87);
+  /* background-color: #2b2d42; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  text-align: center;
+  background: whitesmoke;
+}
+
+a,
+a:visited {
+    color: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
